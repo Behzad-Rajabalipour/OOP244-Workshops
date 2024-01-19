@@ -1,0 +1,8 @@
+Workshop 4 part 1
+In this workshop we have two cpp file with their headers and one main file. 
+These cpp files are Label and LabelMaker. Surprisingly these two modules are not related to each other.
+At the begining I thought they are related so it took a long time for me to analysis the main module to understand they are not related. Label module starts and end then LabelMaker starts. I thought I have to use LabelMaker module inside Label module but it was not. 
+In Label module we have class Label with three constructor. In this class we have content and frame member variable which they will be fill out by constructor. There is also destructor for deallocating memories. ReadLabel is a method to get a content and frame from user if it is not given in constructor. The lesson I learned was we have to allocate dynamic pointer before cin and put the data in pointer. We can not use a static pointer to cin data.
+PrintLabel method will check validationa and return cout. It returns cout because output of this method is ostream.
+
+LabelMaker class which exists in LabelMaker module almost do the same thing the Label class does. It has constructor to get number of labels and put them in matrix char dynamic pointer. It is shown like char** LabelsArray. This matrix pointer has items that each item is dynamic char pointer. We have to pay attention to delete both matrix pointer and pointers inside matrix pointer.

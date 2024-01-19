@@ -1,0 +1,7 @@
+﻿  Label.cpp
+  LabelMaker.cpp
+  cstring.cpp
+D:\C++_edit_comments\work_shops\OOP245\Project4_2\Project4_2\cstring.cpp(18,29): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  w4_tester.cpp
+  Generating Code...
+  Project4_2.vcxproj -> D:\C++_edit_comments\work_shops\OOP245\Project4_2\Project4_2\x64\Debug\Project4_2.exe
