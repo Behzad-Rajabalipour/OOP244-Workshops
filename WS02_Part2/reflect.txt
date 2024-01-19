@@ -1,0 +1,11 @@
+In this workshop I called struct named Population and then i put two parameter in it. postal_code and population. first parameter will get thre charecter of postal code and secon d one get population in int.
+
+The overall concept is to read postal_code and population from csv fil then put them in object of struct then sum up the population of each objct and finally show the information.
+In this regard, I have three cpp file with their headers. First: popReport file is the main cpp file which two other cpp files import in it. 
+
+File module(cpp) has three funtion openFile, noOfRecords and closeFile. openFile call a File pointer and open the csv file, it return false if it can't open the file. noOfRecords will read a number of files, it recognizse number of files based on '\n' number. close file will close the fptr, if we forget to close the file it will be memory leak.
+
+Next cpp file is Population. In this module I used functions of File module in it. In this module I hae five function named sort, load, display, deallocateMemory. In load function i used openFile function to open the file then used noOfRecords to have number of record and then I called array of objects of Population struct. After having all these objects then I give parameters of these objects as input for read function. read function will open the csv file and transfer data to the parameters of the object. 
+
+Display function will show postal code and population of each objects then it sum up all population and show it. Inside display function there is a sort array and i sort objects based on the population then i cout them. At the end I call a deallocateMemory function to release all dynaic memory i used.
+
